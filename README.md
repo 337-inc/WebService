@@ -403,3 +403,65 @@ URL:
     <td>session_key</td>
 </tr>
 </table>
+
+
+7.取论坛帖子
+---
+URL:
+`http://www.337.com/[lang]/api/get_forum_threads`
+
+参数
+<table border="1">
+<tr>
+    <th>参数</th>
+    <th>说明</th>
+</tr>
+<tr>
+    <td>type</td>
+    <td>类型[new|digest|stick|hot]</td>
+</tr>
+<tr>
+    <td>gKey</td>
+    <td>游戏gKey</td>
+</tr>
+<tr>
+    <td>fields</td>
+    <td>字段(可不填)</td>
+</tr>
+<tr>
+    <td>page</td>
+    <td>分页(可不填)</td>
+</tr>
+<tr>
+    <td>items</td>
+    <td>分页时每页最多显示(可不填)</td>
+</tr>
+</table>
+
+
+例：
+`http://tw.337.com/api/get_forum_threads?fields=author,lastpost&gKey=farm@facebook_tw&type=new`
+
+返回服数组：
+<table border="1">
+<tr>
+    <th>参数</th>
+    <th>说明</th>
+</tr>
+<tr>
+    <td>fid</td>
+    <td>fid</td>
+</tr>
+<tr>
+    <td>tid</td>
+    <td>tid</td>
+</tr>
+<tr>
+    <td>subject</td>
+    <td>标题</td>
+</tr>
+<tr>
+    <td>url</td>
+    <td>链接地址</td>
+</tr>
+</table>
