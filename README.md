@@ -32,7 +32,7 @@ api支持jsonp协议的方法调用，以下为公共参数：
   <tr>
     <th>语言</th>
     <th>代号</th>
-  <th>语言</th>
+	<th>语言</th>
     <th>代号</th>
 	<th>语言</th>
     <th>代号</th>
@@ -238,3 +238,168 @@ URL:
 </table>
 
 
+
+
+4.登陆
+---
+URL:
+`http://api.337.com/user/login`
+
+参数
+<table border="1">
+<tr>
+    <th>参数</th>
+    <th>说明</th>
+</tr>
+<tr>
+    <td>password</td>
+    <td>密码</td>
+</tr>
+<tr>
+    <td>username</td>
+    <td>账号</td>
+</tr>
+</table>
+
+例：
+`http://api.337.com/user/login?callback=Elex337.ApiServer._callbacks.e1b8225b3e1c336&lang=tw&password=udontwannaknow&username=baoyu430`
+
+返回服数组：
+<table border="1">
+<tr>
+    <th>参数</th>
+    <th>说明</th>
+</tr>
+<tr>
+    <td>uid</td>
+    <td>平台uid</td>
+</tr>
+<tr>
+    <td>identify_id</td>
+    <td>平台的identify_id</td>
+</tr>
+<tr>
+    <td>username</td>
+    <td>用户名</td>
+</tr>
+<tr>
+    <td>nickname</td>
+    <td>昵称</td>
+</tr>
+<tr>
+    <td>gender</td>
+    <td>性别</td>
+</tr>
+<tr>
+    <td>birthday</td>
+    <td>生日</td>
+</tr>
+<tr>
+    <td>avatar</td>
+    <td>头像</td>
+</tr>
+<tr>
+    <td>level</td>
+    <td>用户等级</td>
+</tr>
+<tr>
+    <td>language</td>
+    <td>使用者语言</td>
+</tr>
+<tr>
+    <td>loginkey</td>
+    <td>loginkey</td>
+</tr>
+<tr>
+    <td>session_key</td>
+    <td>session_key</td>
+</tr>
+</table>
+
+5.登出
+---
+URL:
+`http://api.337.com/user/logout`
+
+参数
+无
+
+例：
+`http://api.337.com/user/logout`
+
+6.注册
+---
+URL:
+`http://api.337.com/user/register`
+
+参数
+<table border="1">
+<tr>
+    <th>参数</th>
+    <th>说明</th>
+</tr>
+<tr>
+    <td>password</td>
+    <td>密码</td>
+</tr>
+<tr>
+    <td>username</td>
+    <td>账号</td>
+</tr>
+<tr>
+    <td>email</td>
+    <td>邮件</td>
+</tr>
+</table>
+
+返回服数组：
+<table border="1">
+<tr>
+    <th>参数</th>
+    <th>说明</th>
+</tr>
+<tr>
+    <td>uid</td>
+    <td>平台uid</td>
+</tr>
+<tr>
+    <td>identify_id</td>
+    <td>平台的identify_id</td>
+</tr>
+<tr>
+    <td>username</td>
+    <td>用户名</td>
+</tr>
+<tr>
+    <td>nickname</td>
+    <td>昵称</td>
+</tr>
+<tr>
+    <td>gender</td>
+    <td>性别</td>
+</tr>
+<tr>
+    <td>birthday</td>
+    <td>生日</td>
+</tr>
+<tr>
+    <td>avatar</td>
+    <td>头像</td>
+</tr>
+<tr>
+    <td>level</td>
+    <td>用户等级</td>
+</tr>
+<tr>
+    <td>language</td>
+    <td>使用者语言</td>
+</tr>
+<tr>
+    <td>loginkey</td>
+    <td>loginkey</td>
+</tr>
+<tr>
+    <td>session_key</td>
+    <td>session_key</td>
+</tr>
+</table>
